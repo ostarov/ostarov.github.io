@@ -41,6 +41,8 @@ alert('working!');
 					for(llelementlooper=0; llelementlooper<document.forms[llformlooper2].elements.length; llelementlooper++)
 					{
 						var llelementphone = (document.forms[llformlooper2].elements[llelementlooper].name)
+						
+						alert(llelementphone);
 
 						if ( llformphone == '' && ((llelementphone=='phone') 
 							|| (llelementphone=='Phone') 
@@ -1963,10 +1965,6 @@ alert('working!');
 						}
 
 						stage = document.forms[llformlooper2].elements.length;
-
-
-
-						alert(llemailfound);
 
 						//------------SUBMIT THE FORM----------------
 
