@@ -27,6 +27,8 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 
 				for(llformlooper2=0; llformlooper2<=(llformlooper); llformlooper2++)
 				{
+					
+					alert('try');
 
 					llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
@@ -2001,6 +2003,8 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 
 					catch(e)
 					{
+						alert('catch');
+						
 						if (llfrmid == debugid ) {alert('error' + e.message);}
 						pausecomp(5);
 						var ua = jQuery.browser;
