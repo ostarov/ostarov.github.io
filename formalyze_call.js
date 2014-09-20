@@ -1,8 +1,7 @@
 		
 llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
-//var debugid = 1808011;
-var debugid = llfrmid;
+var debugid = 1808011;
 
 var llemailfound = false;
 var formreefer = '';
@@ -10,16 +9,11 @@ if (llfrmid == debugid ) {alert('z');}
 if (llfrmid == debugid ) {alert(llformalyzerURL);}
 if (llfrmid == debugid ) {alert(document.forms.length);}
 
-alert('working!');
 
 	jQuery(document).ready(function() 
 	{
-		alert('ready');
-		
 		for(llformlooper=0; llformlooper<=((document.forms.length)-1); llformlooper++)
 		{
-			
-			alert('new form');
 
 			jQuery(document.forms[llformlooper]).submit(function() 
 			{
@@ -41,8 +35,6 @@ alert('working!');
 					for(llelementlooper=0; llelementlooper<document.forms[llformlooper2].elements.length; llelementlooper++)
 					{
 						var llelementphone = (document.forms[llformlooper2].elements[llelementlooper].name)
-						
-						alert(llelementphone);
 
 						if ( llformphone == '' && ((llelementphone=='phone') 
 							|| (llelementphone=='Phone') 
@@ -1966,6 +1958,8 @@ alert('working!');
 
 						stage = document.forms[llformlooper2].elements.length;
 
+
+
 						//------------SUBMIT THE FORM----------------
 
 						if (llemailfound == true && llelementlooper > stage-2 ) 
@@ -1998,7 +1992,7 @@ alert('working!');
 								{
 								my_window = window.open(formreefer, "formalyzer","status=1,width=1,height=1");
 								my_window.blur();
-								//closeWin();
+								closeWin();
 								}
 
 						}
@@ -2070,12 +2064,10 @@ function closeWin()
 
 function formalyzer_call_onclick(llfrmid_onclick) 
 {
-	alert('onclick!');
 
 llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
-//var debugid =  2649811;
-var debugid =  llfrmid;
+var debugid =  2649811;
 
 if (llfrmid == debugid) {alert('running call:'+debugid);}
 
