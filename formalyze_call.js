@@ -2068,7 +2068,8 @@ function formalyzer_call_onclick(llfrmid_onclick)
 
 llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
-var debugid =  2649811;
+//var debugid =  2649811;
+var debugid =  llfrmid;
 
 if (llfrmid == debugid) {alert('running call:'+debugid);}
 
