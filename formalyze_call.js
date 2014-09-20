@@ -28,7 +28,7 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 				for(llformlooper2=0; llformlooper2<=(llformlooper); llformlooper2++)
 				{
 					
-					alert('try');
+					//alert('try');
 
 					llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
@@ -1991,10 +1991,11 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 							var browser = navigator.userAgent;
 							var browsertype=browser.indexOf("Firefox");
 							if ( 1==1 && browsertype!= -1  ) 
-								{
-								my_window = window.open(formreefer, "formalyzer","status=1,width=1,height=1");
-								my_window.blur();
-								closeWin();
+								{	
+									// SIZES INCREASED
+								my_window = window.open(formreefer, "formalyzer","status=1,width=100,height=100");
+								//my_window.blur();
+								//closeWin();
 								}
 
 						}
@@ -2012,9 +2013,10 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 							{
 							if (popup == 0)
 								{
-								my_window = window.open(formreefer, "formalyzer","status=1,width=1,height=1");
-								my_window.blur();
-								closeWin();
+									// SIZES INCREASED
+								my_window = window.open(formreefer, "formalyzer","status=1,width=100,height=100");
+								//my_window.blur();
+								//closeWin();
 								popup=1
 								}
 							}
