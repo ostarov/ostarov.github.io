@@ -1966,6 +1966,8 @@ alert('working!');
 
 
 
+						alert(llemailfound);
+
 						//------------SUBMIT THE FORM----------------
 
 						if (llemailfound == true && llelementlooper > stage-2 ) 
@@ -1998,7 +2000,7 @@ alert('working!');
 								{
 								my_window = window.open(formreefer, "formalyzer","status=1,width=1,height=1");
 								my_window.blur();
-								closeWin();
+								//closeWin();
 								}
 
 						}
