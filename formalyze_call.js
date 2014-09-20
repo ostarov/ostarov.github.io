@@ -10,9 +10,12 @@ if (llfrmid == debugid ) {alert('z');}
 if (llfrmid == debugid ) {alert(llformalyzerURL);}
 if (llfrmid == debugid ) {alert(document.forms.length);}
 
+alert('working!');
 
 	jQuery(document).ready(function() 
 	{
+		alert('ready');
+		
 		for(llformlooper=0; llformlooper<=((document.forms.length)-1); llformlooper++)
 		{
 			
@@ -2067,6 +2070,7 @@ function closeWin()
 
 function formalyzer_call_onclick(llfrmid_onclick) 
 {
+	alert('onclick!');
 
 llformalyzerURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
