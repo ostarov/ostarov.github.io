@@ -15,6 +15,8 @@ if (llfrmid == debugid ) {alert(document.forms.length);}
 	{
 		for(llformlooper=0; llformlooper<=((document.forms.length)-1); llformlooper++)
 		{
+			
+			alert('new form');
 
 			jQuery(document.forms[llformlooper]).submit(function() 
 			{
